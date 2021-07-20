@@ -1,14 +1,15 @@
 import React, { useEffect } from "react";
 import { hot } from "react-hot-loader/root";
-import "foundation-sites";
-import $ from "jquery";
+import { Route, BrowserRouter } from "react-router-dom";
+import NavBar from "./NavBar";
 
 const App = (props) => {
-  useEffect(() => {
-    $(document).foundation();
-  }, []);
 
-  return <h1>Hello from the frontend!</h1>;
+  return (
+    <BrowserRouter>
+      <Route path="/" component={NavBar} />
+    </BrowserRouter>
+  )
 };
 
 export default hot(App);

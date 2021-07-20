@@ -1,10 +1,10 @@
-package com.launchacademy.reviews;
+package com.launchacademy.cassino;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class ReviewsApplicationTests {
+class GameApplicationTests {
 
 	@Test
 	void contextLoads() {
